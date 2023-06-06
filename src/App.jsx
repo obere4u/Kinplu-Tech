@@ -4,7 +4,7 @@ import { Navbar, Offer, Article } from './components';
 
 export default function App() {
   return (
-    <div className='App'>
+    <div className='font-poppins'>
       <div className="">
         <Navbar />
         <Header />
