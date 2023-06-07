@@ -13,3 +13,8 @@
 img {
   max-width: 100%;
 }
+
+#nav_active {
+  background: rgb(22 78 99 );
+  border-radius: 5px;
+}

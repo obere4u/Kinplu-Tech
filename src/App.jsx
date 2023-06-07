@@ -5,8 +5,7 @@ import { Navbar, Offer, Article } from './components';
 export default function App() {
   return (
     <div className='font-poppins'>
-      <div className="">
-        <Navbar />
+      <div>
         <Header />
       </div>
       <Offers />
