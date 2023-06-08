@@ -83,6 +83,7 @@ export default function Navbar() {
             <RiCloseLine
               color="#fff"
               size={27}
+              onClick={showMenu}
               className="ml-auto lg:hidden"
             />
           ) : (

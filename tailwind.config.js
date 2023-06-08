@@ -15,15 +15,15 @@ export default {
 
     keyframes: {
       slideLeft: {
-        "0%": { transform: "translateX(0)" },
-        "100%": { transform: "translateX(-100px)" },
+        "0%": { transform: "translateX(100px)" },
+        "100%": { transform: "translateX(0px)" },
       },
     },
 
     extend: {
       animation: {
         slideLeft:
-          "slideLeft 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+          "slideLeft 1s ease-in-out",
       },
     },
   },

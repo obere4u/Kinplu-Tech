@@ -13,7 +13,7 @@ export default function MobileItems({showMenu, toggleMenu}) {
     <div
       className={`${
         toggleMenu
-          ? "fixed inset-0 left-1/2 bg-[#022144] uppercase flex-col text-[#d6d9e1] text-[12px] font-poppins mx-auto lg:hidden"
+          ? "fixed inset-0 left-1/2 bg-[#022144] uppercase flex-col text-[#d6d9e1] text-[12px] font-poppins mx-auto  animate-slideLeft lg:hidden"
           : "hidden"
       }`}
     >
@@ -21,9 +21,9 @@ export default function MobileItems({showMenu, toggleMenu}) {
         color="#fff"
         size={27}
         onClick={showMenu}
-        className="my-8 ml-auto mr-6"
+        className="mt-4 mb-8 ml-auto mr-6"
       />
-      <ul className="ml-5 sm:ml-20">
+      <ul className="ml-5 sm:ml-20 flex flex-col gap-4">
         <a href="">
           <li
             id="home"
