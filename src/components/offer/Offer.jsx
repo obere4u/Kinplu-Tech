@@ -16,7 +16,7 @@ export default function Offer({ image, imageAlt, title, text, url }) {
         <img
           src={image}
           alt={imageAlt}
-          className="h-60 bg-white mx-auto mt-6"
+          className="h-40 bg-white mx-auto mt-6"
         />
       </div>
       <div className="px-4 mb-20">

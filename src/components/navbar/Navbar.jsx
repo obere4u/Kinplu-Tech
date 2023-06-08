@@ -3,12 +3,11 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import MobileItems from "../MobileItems";
 import "../../index.css";
 
-
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   function showMenu() {
-    setToggleMenu(prevState => !prevState)
+    setToggleMenu((prevState) => !prevState);
   }
 
   const Menu = () => (
@@ -71,34 +70,36 @@ export default function Navbar() {
   );
 
   return (
-    <div className=" bg-[#022144] py-3 w-full fixed">
-      <div className="bg-[#022144] flex items-center text-white px-5 lg:px-10 lg:pt-5 pt-2  max-w-7xl ">
-        <a href="#home">
-          <h2 className="text-sm font-semibold tracking-tighter lg:text-2xl">
-            KINPLUS TECHNOLOGIES
-          </h2>
-        </a>
-        <Menu />
-        {toggleMenu ? (
-          <RiCloseLine
-            color="#fff"
-            size={27}
-            className="ml-auto lg:hidden"
-          />
-        ) : (
-          <RiMenu3Line
-            color="#fff"
-            size={27}
-            onClick={showMenu}
-            className="ml-auto lg:hidden"
-          />
-        )}
-        {toggleMenu && (
-          <MobileItems
-            showMenu={showMenu}
-            toggleMenu={toggleMenu}
-          />
-        )}
+    <div className="bg-[#022144] w-full fixed">
+      <div className="py-3 mx-auto max-w-7xl">
+        <div className="flex items-center  text-white px-5  lg:pt-5 pt-2 sm:px-10">
+          <a href="#home">
+            <h2 className="text-sm font-semibold tracking-tighter sm:text-2xl">
+              KINPLUS TECHNOLOGIES
+            </h2>
+          </a>
+          <Menu />
+          {toggleMenu ? (
+            <RiCloseLine
+              color="#fff"
+              size={27}
+              className="ml-auto lg:hidden"
+            />
+          ) : (
+            <RiMenu3Line
+              color="#fff"
+              size={27}
+              onClick={showMenu}
+              className="ml-auto lg:hidden"
+            />
+          )}
+          {toggleMenu && (
+            <MobileItems
+              showMenu={showMenu}
+              toggleMenu={toggleMenu}
+            />
+          )}
+        </div>
       </div>
     </div>
   );

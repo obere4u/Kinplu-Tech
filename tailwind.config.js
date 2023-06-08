@@ -3,8 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      lg:  "960px",
+      lg: "960px",
       // => @media (min-width: 960px) { ... }
+      sm: "550px",
+      // => @media(min-width: 960px) { ... }
     },
 
     fontFamily: {

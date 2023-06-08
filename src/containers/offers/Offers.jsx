@@ -70,23 +70,29 @@ const offersData = [
 
 export default function Offers() {
   return (
-    <div className="font-poppins max-w-7xl mt-20">
-      <p className="text-center mb-6">
-        <span className="font-semibold"> Duration: </span>6 Months
-      </p>
-      <div className="flex flex-wrap justify-center item-center gap-3 mb-10">
-        {offersData.map((item, index) => (
-          <Offer
-            key={item.title + index}
-            image={item.img}
-            imageAlt={item.imgAlt}
-            title={item.title}
-            text={item.text}
-            url={item.url}
-          />
-        ))}
-      </div>
-      <p className="bg-[#2196f3] text-center text-white font-semibold py-3">Sponsor: Akintunde Oyebode</p>
+    <div className="">
+      <div className="font-poppins  mt-5 sm:mt-10 mx-auto max-w-7xl ">
+        <p className="text-center mb-6">
+          <span className="font-semibold"> Duration: </span>6 Months
+        </p>
+        <div className="flex flex-wrap justify-center item-center gap-8 mb-10 px-5">
+          {offersData.map((item, index) => (
+            <Offer
+              key={item.title + index}
+              image={item.img}
+              imageAlt={item.imgAlt}
+              title={item.title}
+              text={item.text}
+              url={item.url}
+            />
+          ))}
+        </div>
+        </div>
+        <div className="bg-[#2196f3]">
+          <p className="text-center text-white font-semibold py-3 max-w-6xl mx-auto">
+            Sponsor: Akintunde Oyebode
+          </p>
+        </div>
     </div>
   );
 }

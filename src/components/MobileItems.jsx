@@ -23,7 +23,7 @@ export default function MobileItems({showMenu, toggleMenu}) {
         onClick={showMenu}
         className="my-8 ml-auto mr-6"
       />
-      <ul className=" ml-20">
+      <ul className="ml-5 sm:ml-20">
         <a href="">
           <li
             id="home"
