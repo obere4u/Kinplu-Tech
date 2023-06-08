@@ -78,10 +78,10 @@ export default function Footer() {
                 Top Floor, 68B Christore Building, Opp. Crunchies Restaurant,
                 Similoluwa, Ado Ekiti, Ekiti State, Nigeria.
                 <br />
-                <span className="font-bold">Email:</span>
+                <span className="font-bold mt-5">Email: </span>
                 help@kinplusgroup.com
                 <br />
-                <span className="font-bold">Phone:</span> +2347069718643,
+                <span className="font-bold mt-3">Phone: </span> +2347069718643,
                 +2348071572767
               </p>
             </div>
