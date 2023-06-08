@@ -23,7 +23,7 @@ export default {
     extend: {
       animation: {
         slideLeft:
-          "slideLeft 1s ease-in-out",
+          "slideLeft 0.8s ease-in-out",
       },
     },
   },
