@@ -12,8 +12,8 @@ import {
 export default function Footer() {
   return (
     <div className="bg-[#022144]">
-      <div className="text-white px-20 font-poppins mx-auto max-w-7xl">
-        <div className="sm:grid grid-cols-1 sm:grid-cols-2 pt-8 lg:grid-cols-3 lg:gap-4 mb-20 mx-auto">
+      <div className="text-white pt-10 px-8 sm:px-10 font-poppins max-w-7xl">
+        <div className="sm:grid grid-cols-1 sm:grid-cols-2 pt-8 lg:grid-cols-3 lg:gap-4 mb-20">
           <div className="">
             <div>
               <img
